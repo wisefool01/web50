@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./search.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: right;">
+                    <a href="./index.html" class="topbar">Search</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form action="https://google.com/search">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2"><span style="font-size: 1.2em; font-weight: 450;">Find pages with...</span></div>
+                    <div class="col-lg-5 col-sm-8"></div>
+                    <div class="col-lg-4 col-sm-2 remarks" style="font-weight: 600; font-size: 0.85em; vertical-align: bottom; color: rgb(126, 126, 126);">To do this in the search box</div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2 label-text">all these words:</div>
+                    <div class="col-lg-5 col-sm-8">
+                            <input type="text" name="as_q" class="form-control advancedSearchtext" >
+                    </div>
+                    <div class="col-lg-4 col-sm-2 remarks">Type the important words:  <span class="example">&nbsp; tricolor rat terrier</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2 label-text">this exact word or phrase:</div>
+                    <div class="col-lg-5 col-sm-8">
+                            <input type="text" name="as_epq" class="form-control advancedSearchtext" >
+                    </div>
+                    <div class="col-lg-4 col-sm-2 remarks">Put exact words in quotes: <span class="example">&nbsp; "rat terrier"</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2 label-text">any of these words:</div>
+                    <div class="col-lg-5 col-sm-8">
+                            <input type="text" name="as_oq" class="form-control advancedSearchtext" >
+                    </div>
+                    <div class="col-lg-4 col-sm-2 remarks">Type OR between all the words you want: <span class="example">&nbsp; miniature OR standard</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-2 label-text">none of these words:</div>
+                    <div class="col-lg-5 col-sm-8">
+                            <input type="text" name="as_eq" class="form-control advancedSearchtext" >
+                    </div>
+                    <div class="col-lg-4 col-sm-2 remarks">Put a minus sign just before words you don't want: <span class="example">&nbsp; -rodent, -"Jack Russell"</span></div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-3 col-sm-2"></div>
+                    <div class="col-lg-5 col-sm-8" style="text-align: right;">
+                            <input type="submit" value="Advanced Search" class="advancedSearchButton">
+                    </div>
+                    <div class="col-lg-4 col-sm-2"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
